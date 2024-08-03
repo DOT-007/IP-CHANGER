@@ -63,7 +63,7 @@ cat << EOF
 EOF
 
 while true; do
-    read -rp $'\033[34mTimes gap for new IP in seconds required (0 for infinite IP changes): \033[0m' interval
+    read -rp $'\033[34mTimes gap for new IP in seconds required (Min 10 sec For stable connection: \033[0m' interval
     read -rp $'\033[34mNumber of times IP Change  in seconds required (type 0 for infinite IP changes): \033[0m' times
 
     if [ "$interval" -eq "0" ] || [ "$times" -eq "0" ]; then
